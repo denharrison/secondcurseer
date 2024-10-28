@@ -1,0 +1,498 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.center_dop {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ПЕРВЫЙ БЛОК */
+b {
+  color: rgb(32, 32, 39);
+}
+
+.gov {
+  background-image: url(img/Grup1.png), url(img/Star-r1.png), url(img/Star-r2.png);
+  background-position: top -333.46px left 854px, top 538px left 948px, top 568px left 1013px;
+  background-repeat: no-repeat;
+  background-color: rgb(225, 255, 143);
+  max-width: 1440px;
+  height: 710px;
+  /* ТЕКСТОВАЯ ФОРМА С КНОПКОЙ */
+}
+.gov__star-1 {
+  width: 57px;
+  height: 57px;
+  left: 63px;
+  top: 94px;
+  position: absolute;
+}
+.gov__star-2 {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 156px;
+  top: 69px;
+}
+.gov__section {
+  width: 775px;
+  height: 358px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding-left: 120px;
+  padding-top: 196px;
+}
+.gov__title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 24px;
+}
+.gov__text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 48px;
+}
+.gov__btn {
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+  height: 66px;
+  width: 247px;
+}
+.gov__stripe {
+  height: 90px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  gap: 51px;
+  overflow: hidden;
+}
+.gov__stripe-text {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.about {
+  height: 1600px;
+  background: rgb(32, 32, 39);
+}
+.about__content {
+  width: 1201px;
+  height: 1326px;
+}
+.about__head_title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.about__head_text {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.about__head {
+  height: 198px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 94px;
+}
+.about__game-box {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  max-width: 1201px;
+  padding-top: 72px;
+  padding-right: 120px;
+  justify-items: center;
+  align-items: end;
+}
+
+.mobile__scripe {
+  display: none;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
+  height: 51px;
+  gap: 27.4px;
+}
+.mobile__scripe-text {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.mobile__scripe-img {
+  width: 19.34px;
+  height: 19.34px;
+}
+
+.game {
+  width: 378px;
+  height: 551px;
+  background-color: white;
+  grid-column: span 4;
+  border-radius: 30px;
+}
+.game-small {
+  height: 473px;
+}
+.game-medium {
+  height: 512px;
+}
+.game__number {
+  width: 108px;
+  padding-left: 32px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  margin-top: 32px;
+  margin-left: 32px;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0px;
+  text-align: left;
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+}
+.game__name {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: 32px;
+  padding-top: 16px;
+}
+
+.footer {
+  max-width: 1440px;
+  height: 150px;
+  background: rgb(189, 237, 53);
+}
+.footer__text {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 61px;
+}
+
+.content {
+  background-color: rgb(32, 32, 39);
+}
+.content__title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.content__game-box {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  padding-top: 72px;
+  padding-bottom: 144px;
+}
+
+.content__game-form {
+  height: 249;
+  width: 504px;
+  padding-top: 48px;
+  padding-right: 48px;
+  padding-left: 48px;
+}
+.content__game_title {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.content__game_text {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 36px;
+  padding-top: 24px;
+}
+.content__game_btn {
+  height: 66px;
+  width: 247px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+}
+.content__game_btn:hover {
+  color: rgb(32, 32, 39);
+  background: white;
+}
+
+.content__game-1 {
+  height: 500px;
+  grid-column: span 12;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+.content__game-2 {
+  height: 500px;
+  grid-column: span 12;
+  border-radius: 30px;
+  box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .gov__star-1 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 38px;
+    top: 97px;
+  }
+  .gov__star-2 {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 92px;
+    top: 64px;
+  }
+  .gov__section {
+    max-width: 343px;
+    height: 371px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 147px;
+  }
+  .gov__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .gov__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-bottom: 36px;
+  }
+  .gov__btn {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-left: 30px;
+  }
+  .gov__stripe {
+    display: none;
+    height: 51px;
+    gap: 27.4px;
+  }
+  .gov__stripe-text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .gov__stripe-img {
+    width: 19.34px;
+    height: 19.34px;
+  }
+  .mobile__scripe {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+  }
+  .mobile__scripe-text {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .about {
+    display: none;
+  }
+  .content__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    padding-top: 48px;
+  }
+  .content__game-box {
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content__game-1 {
+    grid-column: span 1;
+    max-width: 343px;
+    height: 606px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+  .content__game-2 {
+    grid-column: span 1;
+    max-width: 343px;
+    height: 606px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding-bottom: 32px;
+  }
+  .content__game-form {
+    max-width: 234.93px;
+    height: 182px;
+  }
+  .content__game_title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .content__game_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+  .content__game_btn {
+    height: 55px;
+    width: 285px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+  }
+  .content__game_img {
+    max-width: 343px;
+    height: 284px;
+  }
+  .footer {
+    height: 100px;
+  }
+  .footer__text {
+    padding-top: 40px;
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

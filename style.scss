@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+.center_dop{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+/* ПЕРВЫЙ БЛОК */
+b{
+    color: rgb(32, 32, 39);
+}
+.gov{
+    background-image: url(img/Grup1.png), url(img/Star-r1.png), url(img/Star-r2.png);
+    background-position: top -333.46px left 854px, 
+    top 538px left 948px,
+    top 568px left 1013px;
+    background-repeat: no-repeat;
+    background-color: rgb(225, 255, 143);
+    max-width: 1440px;
+    height: 710px;
+&__star{
+    &-1{
+    width: 57px;
+    height: 57px;
+    left: 63px;
+    top: 94px;
+    position: absolute;
+    }
+    &-2{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 156px;
+    top: 69px;
+    }
+}
+&__section{
+    max-width: 775px;
+    height: 358px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-left: 120px;
+    padding-top: 196px;
+}
+/* ТЕКСТОВАЯ ФОРМА С КНОПКОЙ */
+ &__title{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 24px;
+    }
+ &__text{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 48px;
+    }
+ &__btn{
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    color: rgb(255, 255, 255);
+    height: 66px;
+    width: 247px;
+    }
+    &__stripe{
+    height: 90px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    gap: 51px;
+    overflow: hidden;
+    &-text{
+        color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
+    }
+    }
+}
+.about{
+    height: 1600px;
+    background: rgb(32, 32, 39);
+    &__content{
+    width: 1201px;
+    height: 1326px;
+    }
+    &__head_title{
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        }
+    &__head_text{
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        }
+    &__head{
+    height: 198px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 94px;
+    }
+    &__game-box{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        gap: 32px;
+        max-width: 1201px;
+        padding-top: 72px;
+        padding-right: 120px;
+        justify-items: center;
+        align-items: end;
+    }
+}
+.mobile__scripe{
+    display: none;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+    height: 51px;
+    gap: 27.4px;
+    &-text{
+        color: rgb(32, 32, 39);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 4%;
+        text-align: left;
+        text-transform: uppercase;  
+    }
+    &-img{
+        width: 19.34px;
+        height: 19.34px;
+    }
+}
+.game{
+    width: 378px;
+    height: 551px;
+    background-color: white;
+    grid-column: span 4;
+    border-radius: 30px;  
+    &-small{
+        height: 473px;
+    }
+    &-medium{
+        height: 512px;
+    }
+
+    &__number{
+width: 108px;
+padding-left: 32px;
+padding-top: 8px;
+padding-bottom: 10px;
+margin-top: 32px;
+margin-left: 32px;
+color: rgb(32, 32, 39);
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+line-height: 110%;
+letter-spacing: 0px;
+text-align: left;
+border-radius: 52.58px;
+background: rgb(247, 247, 247);
+    }
+    &__name{
+color: rgb(32, 32, 39);
+font-family: Montserrat;
+font-size: 32px;
+font-weight: 700;
+line-height: 39px;
+letter-spacing: 0px;
+text-align: left;
+margin-left: 32px;
+padding-top: 16px;
+    }
+}
+    .footer{
+    max-width: 1440px;
+    height: 150px;  
+    background: rgb(189, 237, 53);
+    &__text{
+     color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    padding-top: 61px;
+    }
+    }
+    .content{
+        background-color: rgb(32, 32, 39);
+        &__title{
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        }
+        &__game-box{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 32px;
+            padding-top: 72px;
+            padding-bottom: 144px;
+        }       
+    }
+    .content__game{
+        &-form{
+            height: 249;
+            width: 504px;
+            padding-top: 48px;
+            padding-right: 48px;
+            padding-left: 48px;
+        }
+        &_title{
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        &_text{
+            color: rgb(32, 32, 39);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-bottom: 36px;
+            padding-top: 24px;
+        }
+        &_btn{
+            height: 66px;
+            width: 247px;
+            color: rgb(255, 255, 255);
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+        }
+        &_btn:hover{
+            color: rgb(32, 32, 39);
+            background: white;
+        }
+    }
+    .content__game-1{
+        height: 500px;
+        grid-column: span 12;
+        border-radius: 30px;
+        box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+    .content__game-2{
+        height: 500px;
+        grid-column: span 12;
+        border-radius: 30px;
+        box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
+    @import 'mobile';
