@@ -47,7 +47,7 @@ b {
   top: 69px;
 }
 .gov__section {
-  width: 775px;
+  max-width: 775px;
   height: 358px;
   display: flex;
   flex-direction: row;
