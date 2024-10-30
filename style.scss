@@ -143,11 +143,9 @@ b{
     }
     &__game-box{
         display: grid;
-        grid-template-columns: repeat(12,1fr);
+        grid-template-columns: repeat(3,1fr);
         gap: 32px;
-        max-width: 1201px;
         padding-top: 72px;
-        padding-right: 120px;
         justify-items: center;
         align-items: end;
     }
@@ -187,7 +185,9 @@ b{
     &-medium{
         height: 512px;
     }
-
+    &__link{
+        text-decoration-color: white;
+    }
     &__number{
 width: 108px;
 padding-left: 32px;
