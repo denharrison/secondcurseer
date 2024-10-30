@@ -109,7 +109,7 @@ b{
     }
 }
 .about{
-    height: 1600px;
+    height: 1470px;
     background: rgb(32, 32, 39);
     &__content{
     width: 1201px;
@@ -217,6 +217,26 @@ margin-left: 32px;
 padding-top: 16px;
     }
 }
+.game__column{
+    &_1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    }
+    &_2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    }
+    &_3{
+        display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 32px;
+    }
+}
     .footer{
     max-width: 1440px;
     height: 150px;  
@@ -235,6 +255,7 @@ padding-top: 16px;
     .content{
         background-color: rgb(32, 32, 39);
         &__title{
+        padding-top: 46px;
         color: rgb(255, 255, 255);
         font-family: Montserrat;
         font-size: 64px;
