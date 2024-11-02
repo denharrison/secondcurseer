@@ -108,6 +108,19 @@ b{
     }
     }
 }
+.mobile{
+    &__gov{
+    display: none;
+    background-image: url(img/mobilestars.png), url(img/mobilestars2.png), url(img/mobilestars3.png);
+    background-position: top -40.43px 489.81px, 
+    top 557px left 273px,
+    top 580px left 304px;
+    background-repeat: no-repeat;
+    background-color: rgb(225, 255, 143);
+    max-width: 376px;
+    height: 648px;
+    }
+}
 .about{
     height: 1470px;
     background: rgb(32, 32, 39);

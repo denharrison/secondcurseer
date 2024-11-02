@@ -3,6 +3,10 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+  .gov {
+    background-image: url(img/mobilestars.png), url(img/mobilestars2.png), url(img/mobilestars3.png);
+    background-position: top -99px left 209px, top 557px left 273px, top 580px left 304px;
+  }
   .gov__star-1 {
     position: absolute;
     width: 35px;
