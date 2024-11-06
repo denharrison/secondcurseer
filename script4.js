@@ -13,9 +13,9 @@ console.log(smaller(6,6));
 // Задание №2
 const parity = (a) => { 
     if (a % 2 === 0) {
-        console.log('Число четное');
+         return 'Число четное';
     } else {
-        console.log('Число нечетное');
+        return 'Число нечетное';
     }  
 }
 
