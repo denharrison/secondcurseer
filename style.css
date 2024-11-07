@@ -238,6 +238,7 @@ b {
 .game:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 12px white;
+  transition: 0.7s;
 }
 
 .game__column_1 {
