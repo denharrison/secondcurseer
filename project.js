@@ -91,3 +91,32 @@ quiz.forEach((item) => {
 alert(`Вы правильно ответили на ${score} из ${quiz.length} вопросов.`);
 
 }
+function Game5() {
+  const options = ["камень", "ножницы", "бумага"]; // Массив с вариантами
+  
+  let userChoice = prompt("Введите ваш выбор: камень, ножницы или бумага").toLowerCase();
+  
+  if (!options.includes(userChoice)) {
+    alert("Некорректный выбор! Пожалуйста, выберите камень, ножницы или бумагу.");
+    return;
+  }
+
+  let computerChoice = options[Math.floor(Math.random() * options.length)];  // Cлучайный выбор компьютера
+  
+  // Определяем победителя
+
+  let result;
+  if (userChoice === computerChoice) {
+    result = "Ничья!";
+  } else if (
+    (userChoice === "камень" && computerChoice === "ножницы") ||
+    (userChoice === "ножницы" && computerChoice === "бумага") ||
+    (userChoice === "бумага" && computerChoice === "камень")
+  ) {
+    result = "Вы победили!";
+  } else {
+    result = "Компьютер победил!";
+  }
+
+  alert(` Вы выбрали: ${userChoice} | Выбор компьютера: ${computerChoice} |  Итог: ${result}`);
+}
