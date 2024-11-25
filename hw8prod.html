@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удаление элемента</title>
+</head>
+<body>
+    <p class="description">Первый абзац с описанием.</p>
+    <p>Обычный абзац.</p>
+    <p class="description">Второй абзац с описанием.</p>
+    <p>Еще один обычный абзац.</p>
+    <button id="removeButton">Удалить элемент</button>
+
+    <script>
+        document.getElementById('removeButton').addEventListener('click', function() {
+            const firstDescription = document.querySelector('.description');
+            if (firstDescription) {
+                firstDescription.remove();
+            }
+        });
+    </script>
+</body>
+</html>

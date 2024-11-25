@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жесткая работа №8</title>
+</head>
+<body>
+<!-- Задание №1 -->
+    <h1 id="header">Это заголовок</h1>
+    <button id="toggleButton">Скрыть</button>
+<!-- Задание №2 -->
+<p id="paragraph"> Lorem, ipsum dolor.</p>
+<button id="changeColorButton"> Изменить цвет</button>
+<!-- Задание №3 -->
+<h1 id="title"> Заголовок </h1>
+<button id="changeTitleButton"> Измени заголовок</button>
+ <!-- Задание №4 -->
+<h2 class="description"> Lorem, ipsum dolor.</h2>
+<p class="description"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, animi.</p>
+<button class="description"> Lorem </button>
+ <!-- Задание №5 -->
+<p class="descriptionTwo"> Lorem ipsum dolor sit amet.</p>
+<p> Lorem ipsum dolor sit amet.</p>
+<p class="descriptionTwo"> Lorem ipsum dolor sit amet.</p>
+<p> Lorem ipsum dolor sit amet.</p>
+<!-- Задание №6 -->
+<button id="addParagraph"> Добавить элемент </button>
+    <script>
+        // Задание № 1
+        const header = document.querySelector('#header');
+        const toggleButton = document.querySelector('#toggleButton');
+        toggleButton.addEventListener('click', () => {
+            // Проверяем, виден ли заголовок
+            if (header.style.display === 'none') {
+                // Если заголовок скрыт, показываем его
+                header.style.display = 'block';
+                toggleButton.textContent = 'Скрыть';
+            } else {
+                // Если заголовок показан, скрываем его
+                header.style.display = 'none';
+                toggleButton.textContent = 'Показать';
+            }
+        });
+         // Задание №2
+        const paragraph  = document.querySelector('#paragraph');
+        const changeColorButton = document.querySelector('#changeColorButton');
+        changeColorButton.addEventListener('click', () => {
+         paragraph.style.color = 'blue';
+        });
+         // Задание №3
+        const title  = document.querySelector('#title');
+        const changeTitleButton = document.querySelector('#changeTitleButton');
+        changeTitleButton.addEventListener('click', () => {
+            title.textContent = 'Жесткий заголовок';
+        });
+          // Задание №4
+        const alldescription = document.querySelectorAll('.description');
+        console.log(alldescription);
+        alldescription.forEach(description => {
+        description.textContent = 'Измененный текст';
+        });
+         // Задание №5
+         const alldescriptionTwo = document.querySelectorAll('.descriptionTwo');
+        console.log(alldescriptionTwo);
+        alldescriptionTwo.forEach(description => {
+        description.textContent = 'Новый текст';
+        });
+        // Задание №6
+        const newDiv = document.createElement('p');
+        newDiv.textContent = 'Новый абзац';
+        addParagraph.addEventListener('click', () => {
+            document.body.appendChild(newDiv);
+        });
+    </script>
+</body>
+</html>
+
