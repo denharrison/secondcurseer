@@ -23,6 +23,10 @@ b {
   color: rgb(32, 32, 39);
 }
 
+.fon {
+  color: rgb(32, 32, 39);
+}
+
 .gov {
   background-image: url(img/Grup1.png), url(img/Star-r1.png), url(img/Star-r2.png);
   background-position: top -333.46px left 854px, top 538px left 948px, top 568px left 1013px;

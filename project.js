@@ -120,3 +120,17 @@ function Game5() {
 
   alert(` Вы выбрали: ${userChoice} | Выбор компьютера: ${computerChoice} |  Итог: ${result}`);
 }
+// Изменение цвета страницы
+function getRandomColor() {
+  const letters = '0123456789ABCDEF'; // Допустимые значения для цвета
+  let color = '#'; // Начало HEX-кода
+  for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+const button = document.getElementById('changeColorBtn');
+button.addEventListener('click', function() {
+  document.body.style.backgroundColor = getRandomColor();
+});
