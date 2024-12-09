@@ -6,6 +6,7 @@
   .gov {
     background-image: url(img/mobilestars.png), url(img/mobilestars2.png), url(img/mobilestars3.png);
     background-position: top -99px left 209px, top 557px left 273px, top 580px left 304px;
+    height: 648px;
   }
   .gov__star-1 {
     position: absolute;
@@ -76,6 +77,7 @@
     align-content: flex-end;
     flex-direction: row;
     align-items: center;
+    height: 52px;
   }
   .mobile__scripe-text {
     color: rgb(32, 32, 39);

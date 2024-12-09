@@ -50,7 +50,6 @@ b{
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    padding-left: 120px;
     padding-top: 196px;
 }
 /* ТЕКСТОВАЯ ФОРМА С КНОПКОЙ */
@@ -83,6 +82,10 @@ b{
     height: 66px;
     width: 247px;
     }
+&__btn:hover{
+    color: rgb(32, 32, 39);
+    background: white;
+}
     &__stripe{
     height: 90px;
     box-sizing: border-box;
@@ -96,6 +99,7 @@ b{
     align-items: center;
     gap: 51px;
     overflow: hidden;
+    animation: scroll 10s linear infinite;
     &-text{
         color: rgb(32, 32, 39);
     font-family: Montserrat;
@@ -106,6 +110,15 @@ b{
     text-align: left;
     text-transform: uppercase;
     }
+    }
+}
+// Реализация бегущей полосы 
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
 .mobile{
@@ -192,6 +205,7 @@ b{
     background-color: white;
     grid-column: span 4;
     border-radius: 30px;  
+    transition: 0.7s;
     &-small{
         height: 473px;
     }
@@ -233,7 +247,6 @@ padding-top: 16px;
 .game:hover{
 transform: scale(1.1); 
 box-shadow: 0 8px 12px white;
-transition: 0.7s;
 }
 .game__column{
     &_1{

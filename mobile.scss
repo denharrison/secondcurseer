@@ -9,6 +9,7 @@
     top -99px left 209px,
     top 557px left 273px,
     top 580px left 304px;
+    height: 648px;
         &__star-1{
         position: absolute;
         width: 35px;
@@ -73,12 +74,14 @@
         }
         }
     }
+    
     .mobile__scripe{
     display: flex;
     flex-wrap: nowrap;
     align-content: flex-end;
     flex-direction: row;
     align-items: center;
+    height: 52px;
     &-text{
         color: rgb(32, 32, 39);
         font-family: Montserrat;

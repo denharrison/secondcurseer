@@ -129,8 +129,13 @@ function getRandomColor() {
   }
   return color;
 }
-
+const changeBackground = document.getElementById('changeBackground');
 const button = document.getElementById('changeColorBtn');
 button.addEventListener('click', function() {
-  document.body.style.backgroundColor = getRandomColor();
+  changeBackground.style.backgroundColor = getRandomColor();
+});
+// Плавный скролл до страницы
+document.getElementById('scrollButton').addEventListener('click', function() {
+  const target = document.getElementById('target');
+  target.scrollIntoView({ behavior: 'smooth' });
 });

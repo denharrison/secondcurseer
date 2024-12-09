@@ -10,37 +10,37 @@
 <body>
     <!-- ПЕРВЫЙ БЛОК -->
     <div class="gov center">
-            <img class="gov__star-1" src="img/Star 2.png" alt="star">
-            <img class="gov__star-2" src="img/Star 3.png" alt="Star">
+            <img class="gov__star-1" src="img/Star2.png" alt="star">
+            <img class="gov__star-2" src="img/Star3.png" alt="Star">
     <!-- ТЕКСТОВАЯ ЧАСТЬ -->
         <div class="gov__section">
             <h1 class="gov__title">Добро пожаловать <br> на мой сайт мини-игр</h1>
             <p class="gov__text">Тебе предстоит пройти несколько увлекательных игр. <br> Если готов, нажимай <b> «Поехали!» </b> и <b>приступай.</b></p>
-            <button class="gov__btn">
+            <button id="scrollButton" class="gov__btn">
                 Поехали! 
             </button>
         </div>
     </div>
-    <section class="gov__stripe center">
+    <div id="stripe" class="gov__stripe center">
         <p class="gov__stripe-text">Викторина</p>
-        <img  class="gov__stripe-img" src="img/Stripe star.png" alt="star">
+        <img  class="gov__stripe-img" src="img/Stripestar.png" alt="star">
         <p class="gov__stripe-text">Угадай число</p>
-        <img  class="gov__stripe-img" src="img/Stripe star.png" alt="star">
+        <img  class="gov__stripe-img" src="img/Stripestar.png" alt="star">
         <p class="gov__stripe-text">Переверни текст</p>
-        <img  class="gov__stripe-img" src="img/Stripe star.png" alt="star">
+        <img  class="gov__stripe-img" src="img/Stripestar.png" alt="star">
         <p class="gov__stripe-text">Простая арифметика</p>
-        </section>
+    </div>
      <div class="mobile__scripe center">
         <p class="mobile__stripe-text">ВИКТОРИНА</p>
-        <img  class="mobile__stripe-img" src="img/Stripe star.png" alt="star">
+        <img  class="mobile__stripe-img" src="img/Stripestar.png" alt="star">
         <p class="mobile__stripe-text">УГАДАЙ ЧИСЛО</p>
      </div>
     <!-- ОСНОВНАЯ ЧАСТЬ -->
     <main>
-    <div class="about" >
+    <div class="about center" >
     <div class="about__content center_dop">
               <div class="about__head">
-                  <h1 class="about__head_title">Об играх</h1>
+                  <h1 id="target" class="about__head_title">Об играх</h1>
                     <p class="about__head_text">
                       В моей коллекции представлено 6 игр на разные темы.<br>
                       Игры несложные — в них может поиграть каждый.<br>
@@ -52,14 +52,14 @@
                <div class="game__column_1">
                 <a class="game__link" href="#game1">
                     <article  class="game game-small">
-                        <img class="game__img" src="img/Card cover1.png" alt="card1">
+                        <img class="game__img" src="img/Cardcover1.png" alt="card1">
                         <p class="game__number">Игра № 1</p>
                         <h3 class="game__name">Угадай число</h3>
     </article>
                 </a>
 <a class="game__link" href="#game4">
     <article  class="game">
-        <img class="game__img" src="img/Card cover4.png" alt="card4">
+        <img class="game__img" src="img/Cardcover4.png" alt="card4">
         <p class="game__number">Игра № 4</p>
         <h3 class="game__name">Камень, <br> ножницы, <br> бумага</h3>
       </article>
@@ -68,14 +68,14 @@
       <div class="game__column_2">
        <a class="game__link" href="#game2">
         <article  class="game game-medium">
-            <img class="game__img" src="img/Card cover2.png" alt="card2">
+            <img class="game__img" src="img/Cardcover2.png" alt="card2">
             <p class="game__number">Игра № 2</p>
             <h3 class="game__name">Простая арифметика</h3>
 </article>
        </a>
 <a class="game__link" href="#game5">
     <article  class="game game-medium">
-        <img class="game__img" src="img/Card cover5.png" alt="card5">
+        <img class="game__img" src="img/Cardcover5.png" alt="card5">
         <p class="game__number">Игра № 5</p>
         <h3 class="game__name">Простая <br> викторина </h3>
         </article>
@@ -84,14 +84,14 @@
   <div class="game__column_3">
     <a class="game__link" href="#game3">
         <article  class="game game-small">
-            <img class="game__img" src="img/Card cover3.png" alt="card3">
+            <img class="game__img" src="img/Cardcover3.png" alt="card3">
             <p class="game__number">Игра № 3</p>
             <h3 class="game__name">Переверни текст</h3>
     </article>
     </a>
 <a class="game__link" href="#game6">
     <article  class="game">
-        <img class="game__img" src="img/Card cover6.png" alt="card5">
+        <img class="game__img" src="img/Cardcover6.png" alt="card5">
         <p class="game__number">Игра № 6</p>
         <h3 class="game__name">Генератор случайных <br> цветов </h3>
         </article>
@@ -101,7 +101,7 @@
      </div>
           </div>
        <!-- МИНИ ИГРЫ -->   
-    <div class="content center">
+    <div id="changeBackground" class="content center">
     <p class="content__title">Мини-игры</p>
         <div class="content__game-box">
 <article id="game1" class="content__game-1">
